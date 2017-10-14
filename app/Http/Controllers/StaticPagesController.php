@@ -8,16 +8,16 @@ class StaticPagesController extends Controller
 {
     public function home()
     {
-          return '主页';
+        return view('home');
     }
 
     public function help()
     {
-          return '帮助页';
+          return view("help");
     }
 
     public function about()
     {
-          return '关注页';
+          return view("about");
     }
 }

@@ -14,3 +14,7 @@
 Route::get('/','StaticPagesController@home');
 Route::get('/help', 'StaticPagesController@help');
 Route::get('/about', 'StaticPagesController@about');
+Route::get('/users/{user}', 'UsersController@show')->name('users.show');
+
+
+Route::resource('users', 'UsersController');

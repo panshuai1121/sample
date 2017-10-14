@@ -3,10 +3,9 @@
   <head>
     <title>@yield('title', 'Sample App') - 全民舞动</title>
     <link rel="stylesheet" href="/css/app.css">
-  </head>
+  </head> 
   <body>
     @include('layouts._header')
-
     <div class="container">
       <div class="col-md-offset-1 col-md-10">
         @yield('content')
